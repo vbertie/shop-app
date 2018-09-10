@@ -1,0 +1,45 @@
+<div class="container" style="margin-top: 5%;">
+	<mat-form-field>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+</mat-form-field>
+	<div class="table-responsive">
+		<table id="bookListTable" class="table bordered highlight" style="text-align:center;">
+			<thead style="background-color:#1b1818;" >
+				<tr>
+					<th>
+						<input type="checkbox" (change)="updateSelected($event.target.checked)" />
+					</th>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Promotion Price</th>
+					<th>Category </th>
+					<th>View</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor = "let product of productList">
+					<td>
+						<input hidden="hidden" name="id" />
+						<input type="checkbox" [checked]="allChecked" (change)="updateRemoveProductList($event.target.checked, product)" />
+					</td>
+					<td>{{product.id}}</td>
+					<td>{{product.name}}</td>
+					<td>{{product.price}}</td>
+					<td>{{product.type}}</td>
+					<td>
+						<input hidden="hidden" name="id" />
+						<button mat-button (click)="onSelect(product)" value="view">View</button>
+					</td>
+					<td>
+						<input hidden="hidden" name="id" />
+						<button mat-button (click)="openDialog(product)" value="delete"><span class="fa fa-times"></span>Delete</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+  <br />
+			<a style="color:#fff; margin-left:70%;" mat-raised-button class="mat-warn" routerLink="/admin">Back</a>
+	<button style="color:#fff; margin-left:5%; background-color:#1b1818;" mat-raised-button id="deleteSelected" (click)="removeSelectedProducts()">Delete Selected</button>
+</div>

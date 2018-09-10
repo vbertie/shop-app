@@ -1,0 +1,33 @@
+<div class="container" style="margin-top: 5%;">
+	<div class="table-responsive">
+		<table id="bookListTable" class="table bordered highlight">
+			<thead style="background-color:#1b1818;text-align:center;" >
+				<tr>
+					<th>ID</th>
+					<th>Paid</th>
+					<th>Delivered</th>
+        </tr>
+			</thead>
+			<tbody>
+				<tr style="text-align:center;">
+					<td>{{order.id}}</td>
+					<td>
+							<select [(ngModel)]="this.order.isPaid">
+								<option [ngValue]="false">false</option>
+								<option [ngValue]="true">true</option>
+							</select>
+					</td>
+          <td>
+						<select [(ngModel)]="this.order.isDelivered">
+							<option [ngValue]="false">false</option>
+							<option [ngValue]="true">true</option>
+						</select>
+					</td>
+        </tr>
+			</tbody>
+		</table>
+	</div>
+  <br />
+	 <a style="color:#fff; margin-left:75%;"  mat-raised-button class="mat-warn" routerLink="/admin/listOrders">Back</a>
+	<button mat-raised-button style="background-color:#1b1818; margin-left:5%; color:#fff;" id="deleteSelected" (click)="submit(this.order)">Edit</button>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+	    <div class="row">
+	    	<div class="col-md-2">
+
+        </div>
+	    	<div class="col-md-8">
+
+	    		<table style="margin-top:15%;" class="table">
+	    				<tr *ngFor = "let product of productList">
+              <td>
+	    					<div class="row" >
+                  <div class="col-md-4">
+                    <a (click)="onSelect(product)" style="cursor:pointer;">
+                      <img  style="padding-top:12%;"class="img-fluid" [src]="serverPath + '/image/product/'+product.id+'.jpg'"/>
+                    </a>
+                  </div>
+
+                <td style="padding-left:15%; width:60%; border:none;">
+	    						<div class="col-md-9">
+	    							<h4 (click)="onSelect(product)" style="margin-top:20px; cursor:pointer;">{{product.name}}
+	    							</h4>
+	    							<a style="margin-top:4%;"><span style="font-size: x-large;color:#db3208">$<span>{{product.price | number : '1.2-2'}}</span></span></a>
+                        <a  mat-raised-button style=" margin-top: 3%;margin-left: 5%; background-color:#1b1818; color:#fff;"(click)="onSelect(product)">Details</a>
+	    						</div>
+								</td>
+	    					</div>
+	    				</tr>
+	    		</table>
+	    	</div>
+	    </div>
+	</div>

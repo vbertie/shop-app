@@ -1,0 +1,59 @@
+<div class="container" style="margin-top:4%; ">
+  <div style="margin-left:28%;">
+
+      <ul class="thumbnails">
+        <li class="span5">
+          <div class="thumbnail" style="padding: 0">
+            <div class="caption" style="text-align: center; vertical-align: middle">
+              <h2>{{promotion.promotionName}}</h2>
+            </div>
+            <div class="modal-footer" style="text-align: left">
+              <div class="progress progress-striped active" style="background: #ddd">
+                <div class="bar" style="width: 60%;"></div>
+              </div>
+              <div class="row-fluid">
+                <div style="text-align:center;"><b>Percentage reduction:</b><br/><small>{{promotion.percentageReduction}}%</small></div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+    </div>
+</div>
+
+<main class="container pt-5">
+       <div class="card mb-5" style="text-align:center;">
+           <div class="card-header"><h2>Availbe product to assign to the promotion</h2></div>
+           <div class="card-block p-0">
+               <table class="table table-bordered table-sm m-0">
+                   <thead class="">
+                       <tr>
+                           <!-- <th>
+                             #
+                           </th> -->
+                           <th>Add</th>
+                           <th>Product Name</th>
+                           <th>Category</th>
+                           <th>Price</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr *ngFor="let product of avaibleProducts">
+                           <td>
+                            <input hidden="hidden" name="id" />
+                           	<input type="checkbox" [checked]="allChecked" (change)="addToPromotionProductList($event.target.checked, product)" />
+                              <!-- <mat-slide-toggle [checked]="allChecked" (change)="addToPromotionProductList($event.target.checked, product)"></mat-slide-toggle> -->
+                           </td>
+                           <td>{{product.name}}</td>
+                           <td>{{product.type}}</td>
+                           <td>${{product.price}}</td>
+                       </tr>
+                   </tbody>
+               </table>
+           </div>
+       </div>
+       <button  style="color:#fff; margin-left:70%; width:10%;" mat-raised-button class="mat-warn" routerLink="/admin/managePromotions">Back</button>
+       <button style="color:#fff; margin-left:5%; background-color:#1b1818;" mat-raised-button id="addSelected" (click)="addSelected()">Add Selected</button>
+   </main>

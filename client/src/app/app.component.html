@@ -1,0 +1,12 @@
+
+<div *ngIf="this.currentUrlPath === 'admin'">
+  <app-nav-bar></app-nav-bar>
+</div>
+<div *ngIf="this.currentUrlPath === ''">
+  <app-nav-bar-user></app-nav-bar-user>
+</div>
+<div *ngIf="this.currentUrlPath === 'user'">
+  <app-nav-bar-user></app-nav-bar-user>
+</div>
+
+<router-outlet></router-outlet>

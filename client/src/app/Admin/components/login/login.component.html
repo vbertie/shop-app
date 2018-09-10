@@ -1,0 +1,92 @@
+<div class="container">
+  <div [hidden]="loggedIn">
+    <h1 class="form-heading">login Form</h1>
+    <div class="login-form">
+      <div class="main-div">
+        <div class="panel">
+          <h2>Admin Login</h2>
+          <p>Please enter your email and password</p>
+          <span class="text-danger align-middle">
+    <i  *ngIf="wrongCredentials" class="fa fa-close">Incorrect username or password. (login: admin, password: admin)</i>
+    </span>
+        </div>
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <input type="text" matInput [(ngModel)]="credential.username" class="form-control" name="username" id='username' placeholder="Username" />
+          </div>
+
+          <div class="form-group">
+            <input type="password" matInput [(ngModel)]="credential.password" class="form-control" name="password" id='password' placeholder="Your password" />
+          </div>
+          <div class="forgot">
+            <a (click)="forgotPassword()" style="cursor:pointer">Forgot credentials?</a>
+            <div *ngIf="forgotCredentials">
+              <span class="text-danger align-middle">
+           <i class="fa fa-close">Login: Admin, Password: Admin</i>
+           </span>
+            </div>
+          </div>
+          <button type="submit" style=" background-color:#1b1818; border:none;" class="btn btn-primary">Login</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <div [hidden]="!loggedIn" class="list-group">
+    <br /><br /><br />
+    <div class="row">
+      <div class="col-md-3">
+        <div class="col-md-12">
+          <div class="dropdown">
+            <button style="width:250px; background-color:#1b1818;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Product
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button"><a routerLink="/admin/addProduct">Add Product</a></button>
+              <button class="dropdown-item" type="button"><a routerLink="/admin/listProducts">View Products</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="col-md-12">
+          <div class="dropdown">
+            <button style="width:250px; background-color:#1b1818;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Category
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button"><a routerLink="/admin/addCategory" >Add Category</a></button>
+              <button class="dropdown-item" type="button"><a routerLink="/admin/listCategories">View Categories</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="col-md-12">
+          <div class="dropdown">
+            <button style="width:250px; background-color:#1b1818;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Promotion
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button"><a routerLink="/admin/addPromotion" >Add Promotion</a></button>
+              <button class="dropdown-item" type="button"><a routerLink="/admin/listPromotions" >View Promotions</a></button>
+              <button class="dropdown-item" type="button"><a routerLink="/admin/managePromotions">Promotion Manager</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="col-md-12">
+          <div class="dropdown">
+            <button style="width:250px; background-color:#1b1818;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Order
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button"><a routerLink="/admin/listOrders" >View Orders</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

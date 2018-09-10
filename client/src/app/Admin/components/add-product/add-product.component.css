@@ -1,0 +1,22 @@
+.example-full-width {
+  width: 90%;
+}
+
+.example-full-width-solo {
+  width: 95%;
+}
+
+.example-full-width-solox {
+  width:95%;
+  margin-left: 25px;
+}
+
+textarea {
+    width: 800px;
+    height: 300px;
+}
+
+p, span {
+    font-size: 14px;
+    color: grey;
+}

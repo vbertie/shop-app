@@ -1,0 +1,32 @@
+<main class="container pt-5" style="margin-top:4%;">
+       <div class="card mb-5" style="text-align:center;">
+           <div class="card-header"><h2>Promotion Manager</h2></div>
+           <div class="card-block p-0">
+               <table class="table table-bordered table-sm m-0">
+                   <thead class="">
+                       <tr>
+                           <!-- <th>#</th> -->
+                           <th>Promotion Name</th>
+                           <th>Percentage Reduction</th>
+                           <th>Manage</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr *ngFor="let promotion of promotions">
+                           <!-- <td>
+                               <label class="custom-control custom-checkbox">
+                                   <input type="checkbox" class="custom-control-input">
+                                   <span class="custom-control-indicator"></span>
+                               </label>
+                           </td> -->
+                           <td>{{promotion.promotionName}}</td>
+                           <td>{{promotion.percentageReduction}}%</td>
+                           <td>
+                             <button mat-button (click)="managePromotion(promotion)"><i class="far fa-hand-point-right"> </i> Manage</button>
+                           </td>
+                       </tr>
+                   </tbody>
+               </table>
+           </div>
+       </div>
+       <a style="color:#fff; margin-left:80%; width:15%;" mat-raised-button class="mat-warn" routerLink="/admin">Back</a>

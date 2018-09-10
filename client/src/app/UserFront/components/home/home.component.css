@@ -1,0 +1,27 @@
+/* Template-specific stuff
+ *
+ * Customizations just for the template; these are not necessary for anything
+ * with disabling the responsiveness.
+ */
+
+
+
+
+/* Non-responsive overrides
+ *
+ * Utilize the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+
+/* Reset the container */
+
+/* Undo form expansion */
+.navbar-form {
+  float: right;
+  width: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}

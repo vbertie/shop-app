@@ -1,0 +1,50 @@
+<div class="container" style="margin-top: 5%;">
+	<mat-form-field>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+</mat-form-field>
+	<div class="table-responsive">
+		<table id="bookListTable" class="table bordered highlight" style="text-align:center;">
+			<thead style="background-color:#1b1818;" >
+				<tr>
+					<th>
+						<input type="checkbox" (change)="updateSelected($event.target.checked)" />
+					</th>
+					<th>ID</th>
+					<th>Paid</th>
+					<th>Delivered</th>
+					<th>View</th>
+					<th>Edit</th>
+					<th>Delete</th>
+        </tr>
+			</thead>
+			<tbody>
+				<tr *ngFor = "let order of orders" style="text-align:center;">
+					<td>
+						<input hidden="hidden" name="id" />
+						<input type="checkbox" [checked]="allChecked" (change)="removeOrderLists($event.target.checked, order)" />
+					</td>
+					<td>{{order.id}}</td>
+					<td *ngIf="order.isPaid == true">yes</td>
+          <td *ngIf="order.isPaid == false">no</td>
+          <td *ngIf="order.isDelivered == true">yes</td>
+          <td *ngIf="order.isDelivered == false">no</td>
+					<td>
+						<input hidden="hidden" name="id" />
+						<button mat-button (click)="viewOrder(order)" value="delete"> view</button>
+					</td>
+          <td>
+            <input hidden="hidden" name="id" />
+            <button mat-button (click)="editOrder(order)" value="submit">edit</button>
+          </td>
+          <td>
+            <input hidden="hidden" name="id" />
+            <button mat-button (click)="removeOrder(order)" value="delete"><span class="fa fa-times"></span> delete</button>
+          </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+  <br />
+	<a style="color:#fff; margin-left:70%;" mat-raised-button class="mat-warn"  routerLink="/admin">Back</a>
+	<button style="color:#fff; margin-left:5%;background-color:#1b1818;" mat-raised-button id="deleteSelected" (click)="removeSelected()">Delete Selected</button>
+</div>

@@ -1,0 +1,55 @@
+<div class="container" style="margin-top:2%;">
+  <div *ngIf="cartIsEmpty">
+    <h1 style="text-align:center;">Your cart is empty, make some shopping :)</h1>
+  </div>
+  <div class="card shopping-cart">
+    <div class="card-header text-light" style="background-color:#1b1818;">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping cart
+      <a href="" class="btn btn-outline-info btn-sm pull-right" style="float:right;">Continiue shopping</a>
+      <div class="clearfix"></div>
+    </div>
+    <div class="card-body">
+      <!-- PRODUCT -->
+      <div class="row" *ngFor="let item of items">
+        <div class="col-12 col-sm-12 col-md-2 text-center">
+          <img class="img-fluid" [src]="serverPath + '/image/product/'+item.product.id+'.jpg'" alt="prewiew" width="120" height="80">
+        </div>
+        <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+          <h4 class="product-name"><strong>{{item.product.name}}</strong></h4>
+          <h4>
+                                <small>{{item.product.description}}</small>
+                            </h4>
+        </div>
+        <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+          <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+            <h6><strong>{{item.product.price}} <span class="text-muted">x</span></strong></h6>
+          </div>
+          <div class="col-4 col-sm-4 col-md-4">
+            <div class="quantity">
+              <input type="button" value="+" class="plus">
+              <input type="number" step="1" max="99" min="1" value="{{item.quantity}}" title="Qty" class="qty" disabled>
+              <input type="button" value="-" class="minus">
+            </div>
+          </div>
+          <div class="col-2 col-sm-2 col-md-2 text-right">
+            <button class="btn btn-danger btn-sm" (click)="removeCartItem(item.product.id)"><i class="fa fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="card-footer">
+      <div class="pull-right" style="margin: 1%;">
+        <div *ngIf="items?.length > 0">
+          <a class="btn btn-success pull-right" (click)="onSelect(this.cart)" style="float:right;">Checkout</a>
+        </div>
+        <div *ngIf="items?.length == 0" style="width:10%; float:right;">
+          <a (click)="emptyCart()" class="btn btn-success btn-block">Checkout</a>
+        </div>
+        <div class="pull-right" style="float:right; margin: 5px">
+          Total price: <b> ${{cart.grandTotal}}</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

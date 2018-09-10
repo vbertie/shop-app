@@ -1,0 +1,25 @@
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#1b1818;">
+          <div class="container">
+            <a class="navbar-brand" href="/admin" style="font-size:1.4em;">Admin Portal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+              <ul class="navbar-nav mr-auto">
+                <li>
+
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li *ngIf="!loggedIn">
+                   <a style="color:#fff;" routerLink="/" st
+                   yle="font-size:20px;"><i class="fas fa-user"  style="font-size:1.4em;"></i></a>
+                 </li>
+         				<li *ngIf="loggedIn">
+         					<a style="color:#fff; cursor:pointer;" mat-button (click)="logout()" class="nav-link">Logout</a>
+         				</li>
+              </ul>
+            </div>
+          </div>
+        </nav>

@@ -1,0 +1,37 @@
+<div class="container" style="margin-top:5%;">
+    <form  (ngSubmit)="onSubmit(category)">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2>Edit Category</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 field-label-responsive">
+            </div>
+            <div class="col-md-6">
+                <div class="form-group has-danger">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon"></div>
+                        <input type="text" name="category" [(ngModel)]="this.category.name" class="form-control" id="category"
+                               placeholder="Category name" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-control-feedback">
+                  <span class="text-danger align-middle">
+                      <i *ngIf="categorySize" class="fa fa-close">Maximum length is 20 chars</i>
+                          <i *ngIf="categoryNotNull" class="fa fa-close">Category name can't be empty</i>
+                  </span>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+							<a style="color:#fff; margin-left:54%;"class="mat-warn" mat-raised-button routerLink="/admin">Cancel</a>
+							<button  style="color:#fff; margin-left:2%; background-color:#1b1818;" mat-raised-button type="submit">Edit Product</button>
+        </div>
+      </form>
+</div>

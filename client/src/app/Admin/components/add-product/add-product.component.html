@@ -1,0 +1,132 @@
+<div class="container" style="margin-top:5%;">
+    <form class="form-horizontal" role="form" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2>Add New Product</h2>
+                <hr>
+            </div>
+        </div>
+				<div class="row">
+            <div class="col-md-3 field-label-responsive">
+            </div>
+            <div class="col-md-6">
+                <div class="form-group has-danger">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" ></div>
+                        <input type="text" name="name" [(ngModel)]="this.createdProduct.name" class="form-control" id="name"
+                               placeholder="Name" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-control-feedback">
+                        <span class="text-danger align-middle">
+                            <i *ngIf="productSize" class="fa fa-close">Maximum length is 50 chars.</i>
+                            <i *ngIf="nameNotBlank" class="fa fa-close">Product name can't be empty.</i>
+                        </span>
+                </div>
+            </div>
+        </div>
+				<div class="row">
+            <div class="col-md-3 field-label-responsive">
+            </div>
+            <div class="col-md-6">
+                <div class="form-group has-danger">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" ></div>
+                        <input type="text" name="Price" [(ngModel)]="this.createdProduct.price" class="form-control" id="price"
+                               placeholder="Price" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-control-feedback">
+                        <span class="text-danger align-middle">
+                          <i *ngIf="pricePattern" class="fa fa-close">Only digits are avaible.</i>
+                          <i *ngIf="priceNotBlank" class="fa fa-close">Product price can't be empty.</i>
+                        </span>
+                </div>
+            </div>
+        </div>
+				<div class="row">
+						<div class="col-md-3 field-label-responsive">
+						</div>
+						<div class="col-md-6">
+								<div class="form-group has-danger">
+										<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+												<div class="input-group-addon" ></div>
+												<input type="text" name="price" [(ngModel)]="this.createdProduct.inStockNumber" class="form-control" id="inStockNumber"
+															 placeholder="In stock number" required>
+										</div>
+								</div>
+						</div>
+						<div class="col-md-3">
+								<div class="form-control-feedback">
+												<span class="text-danger align-middle">
+                          <i *ngIf="inStockNumberPattern" class="fa fa-close">Only digits are avaible.</i>
+                          <i *ngIf="inStockNumberNotBlank" class="fa fa-close">Product in stock number can't be empty.</i>
+												</span>
+								</div>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col-md-3 field-label-responsive">
+						</div>
+						<div class="col-md-6">
+								<div class="form-group has-danger">
+										<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+												<div class="input-group-addon" ></div>
+												<mat-select style="margin-left:3%;" placeholder="Category" id="productType" name="productType" [(ngModel)]="createdProduct.type" class ="example-full-width">
+													<mat-option *ngFor = "let category of categories" value="{{category.name}}">{{category.name}}</mat-option>
+												</mat-select>
+										</div>
+								</div>
+						</div>
+						<div class="col-md-3">
+								<div class="form-control-feedback">
+												<span class="text-danger align-middle">
+                          <i *ngIf="categoryNotBlank" class="fa fa-close">Product Category can't be empty.</i>
+												</span>
+								</div>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col-md-3 field-label-responsive">
+						</div>
+						<div class="col-md-6">
+								<div class="form-group has-danger">
+										<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+												<div class="input-group-addon" ></div>
+									<textarea  style="border:solid 1px; border-color:#DCDCDC;" matInput id="description" [(ngModel)]="createdProduct.description" name="description" placeholder="Description" required></textarea>
+										</div>
+								</div>
+						</div>
+						<div class="col-md-3">
+								<div class="form-control-feedback">
+                  <span class="text-danger align-middle">
+                    <i *ngIf="descriptionSize" class="fa fa-close">Maximum length is 255 chars.</i>
+                  </span>
+                </div>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col-md-3 field-label-responsive">
+						</div>
+						<div class="col-md-6">
+								<div class="form-group has-danger">
+										<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+												<div class="input-group-addon" ></div>
+										<input id="tile" type="file" id="newBookImage" name="newBookImage" (change)="uploadImageService.fileChangeEvent($event)">
+										</div>
+								</div>
+						</div>
+
+				</div>
+		<br />
+        <div class="row">
+							<a style="color:#fff; margin-left:54%;"class="mat-warn" mat-raised-button routerLink="/admin">Cancel</a>
+							<button  style="color:#fff; margin-left:2%; background-color:#1b1818;" mat-raised-button type="submit">Add Product</button>
+        </div>
+    </form>
+</div>
