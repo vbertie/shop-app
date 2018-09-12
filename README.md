@@ -17,9 +17,9 @@ It's completely functional online store with admin management panel.
 
 - Hibernate, JPA
 
-- Spock
-
 - MySQL
+
+- Spock
 
 - Angular, Bootstrap, CSS
 
