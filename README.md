@@ -19,6 +19,8 @@ It's completely functional online store with admin management panel.
 
 - Spock
 
+- MySQL
+
 - Angular, Bootstrap, CSS
 
 
