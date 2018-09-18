@@ -16,8 +16,7 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode
 class DeliveryAddress {
 
-    @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn
+    @Embedded
     private City city;
 
     @Column(length = 40, nullable = false)

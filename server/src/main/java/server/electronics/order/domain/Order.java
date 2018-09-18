@@ -48,10 +48,10 @@ class Order {
     private boolean isDelivered;
 
     @CreatedDate
-    @Column(insertable = true, updatable = false)
+    @Column(insertable = false, updatable = false)
     private LocalDateTime creationDate;
 
     @LastModifiedDate
-    @Column(insertable = true, updatable = true)
+    @Column(insertable = false, updatable = false)
     private LocalDateTime lastModifiedDate;
 }

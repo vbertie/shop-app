@@ -25,7 +25,6 @@ import static server.electronics.util.mapper.SuperConverter.setIfNonNull;
 class OrderConverter implements SuperConverter<OrderDto,ShowOrderDto, Order> {
 
     private CustomerRepository customerRepository;
-    private CityRepository cityRepository;
 
     @Override
     public Order convert(@NotNull OrderDto dto) {
@@ -55,7 +54,6 @@ class OrderConverter implements SuperConverter<OrderDto,ShowOrderDto, Order> {
         }
 
         customerRepository.save(result.getCustomer());
-        cityRepository.save(result.getDeliveryAddress().getCity());
 
         return result;
     }

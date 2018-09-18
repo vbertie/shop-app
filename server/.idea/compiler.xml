@@ -9,5 +9,8 @@
         <module name="electronics" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="electronics" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

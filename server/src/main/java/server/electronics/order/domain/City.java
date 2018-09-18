@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity
+@Embeddable
 @Getter
 @Setter
 @Builder
@@ -19,10 +19,6 @@ import java.time.LocalDateTime;
 @EnableJpaAuditing
 @EntityListeners(AuditingEntityListener.class)
 class City {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
     @Column(length = 40, nullable = false)
     private String town;

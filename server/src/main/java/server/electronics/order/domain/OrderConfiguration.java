@@ -12,13 +12,13 @@ class OrderConfiguration {
 
     public OrderFacade orderFacade(ProductFacade productFacade){
         return orderFacade(productFacade ,new InMemoryCustomerRepository(),
-                new InMemoryOrderRepository(), new InMemoryCityRepository());
+                new InMemoryOrderRepository());
     }
 
     @Bean
     public OrderFacade orderFacade(ProductFacade productFacade, CustomerRepository customerRepository,
-                                   OrderRepository orderRepository, CityRepository cityRepository){
-        SuperConverter<OrderDto, ShowOrderDto, Order> converter = new OrderConverter(customerRepository, cityRepository);
+                                   OrderRepository orderRepository){
+        SuperConverter<OrderDto, ShowOrderDto, Order> converter = new OrderConverter(customerRepository);
         return new OrderFacade(orderRepository, productFacade, converter);
     }
 
