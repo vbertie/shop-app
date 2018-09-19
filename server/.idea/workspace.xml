@@ -2,346 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d32fc36c-f777-4365-b4f6-1f6a34cc7831" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_0_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_24_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_24_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_24_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_24_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_24_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_24_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spockframework_spock_core_1_0_groovy_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_core_2_0_3_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_data_redis_2_0_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_5_0_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/01fc7335e12cf0ee25a00ac27fe83d5583b8c61a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/0207bb7250791d83d064bd51c7a93a95f445c34b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02c5a31652397f72abe3d9b044b666dabd870803" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03a802ebb9af428e5c90ffb2bea56276eeacd52e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/046098473778890dd209e12192e74b47dee486d1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05ba389475fb385cc746355a0d243503c1e6d967" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/1123377656738fdba1aa0cb44f9e97cf0c5c15c0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/133f3d8eceea7c23bd38a79135ffaf1f58929105" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/142ebadde070b09b5c7b71409cce9efa4497a015" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/144cb41a57c159ab3ff346866ef0cb3af68474ea" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/152cc5fee13d73cb117d4720e4fe1bad259327e5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/153bd591d46cf520bb7f7eb6a8def89c9c17db8b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/1828265388325b71c40cb648fcc27b31be748cf2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c1999c2f6c9a99f03a02004e247f091c5089719" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2ae63a2cd55fca38152c90796af6a11ec1e4ed08" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e3d1c5e3b86703cdd0df1559783a14fe422321f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31ff507143c0c0eec8030908e2e77ce92840bde2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/342ba58e50950d34a45682b2787402ff7a4457ee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36965063c506858927d9a52e893f898616972eb9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37b690eb0cbf470800a4cfad2dd0460c0faa918b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37d4f41d11c486c565f142407e1af850f16e0587" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42fa80d916b42477276249404d5ca3d2aca5a19a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/463995655f8b6a81525bbee526cf21810d77ff96" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/48024fba4d8cee296bcad348b0db1906c182ee27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f95648ebee47a226f48b5adc2b519fc330bbf39" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/5323a9175e852f8bdd2002bfa5b1e54c32c16b9b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54d3ed294d231c224c81130553c7b5badc850e41" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54d6abe30e493a3de92442fc1b141deede42640a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58a6d0134d9ffaee01c67533f38c3a8f4dda3076" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/598e9a5c9cb9fa881e8906fb09b4d1376a04ddc6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a12518b86b0b68671a23bae61a4407b6f9c4f61" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c5e1c580d3cd0ef712ab3e0236ddfbb5b5a02ac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f16e408aab76598da2bd86d5f8a9f362054958c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60448eec57e804ac385e3d170cd3ec30b3ed9cc4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/641e5f92b78f08575d630679d98161d6a6306b34" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/64af4b7a046928d30028982b466a9fe0a03033f6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/67bf3bbdf1b37a965c2976878c97022e9727a9a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68352bbbcba6de1f67a8e6363e927288a4e14072" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71174299364ce20eb0ee2195f32b6b7108248ae9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74ef4f6932839cb55e12ef11c7983dcd51e7d18e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76d2bef1ead9793d05e34ff2cf0f9ebf0f011759" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b2cab688fda33eef9350212221146a95a8b89b0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f4709d76614a9cc0ceabba95d579e2a7705d664" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80e28aa28c70addb933dcd0e864e6ca81dcd4f9b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/833a775d87943266514088c10af67149ab0684cb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/83f5a067aae7c3eb0c62a28a231762eb467a7919" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/8747f1e89b812dc296476476e23b1097fea97bf3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bbab8c2a3ad359e9d37bbbff550545524e9e28d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/927d0c1c1df9a609db6b339e2aa726b8cf00a819" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9dd949695716d366ad5e9b08c6dbb7de7a6b9cb5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9ee4a5a78ff736b947fd4772a001e01ab5af3315" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a4f7cdd02faf4311f2a52ed03385dca41d7186ac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a78bbda05946b7c0fb734db81c27cc7dc00ff483" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9b557b52efa7a36c330acdfc16b943dd6420c3c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af31f6e6205cfc7a0899c782225d9ecd26d86d50" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af3d638c035351e2d0d315f880d9bdf7c17a22a9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b06f261e8ae7852a2762d940f1b77befc42af935" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b0e17db2031fa73cf350bf21f7310b9939dd1ce5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b42df4d9da3048e9db987c8a804625785abc6d25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b465906961e944a11147c7385515ab8121e0e477" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/babaab6136149079a4f1f1ec4ab374e9b61ef32a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c247a2159065afcc80c031c8d4513c0c422e2868" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c318d87d95994d7918c2d614dc6468632117c1df" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c7a4941acd885742ec0c0e8d63e681479a54a1ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccf466289ae3520388351769268a8fb67d0e5dc9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d710659577df4b4c423c7feccaf5835b642fac4e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d926b199361202e31408d3da2e4a90f46669a15b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e01d268cdef0dada10fa62ee38071394056b32d8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8321e6433d03d550d5b3eaf8ac26e5210b2885e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8bab6d24a5b53e4229f5637cbd50bdf32163cc1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f00e10c8f80cd5d682e77ea0e31caf48984e7d29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0f98e9e27bb498b020b4c3fca807b06867ce368" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f22a50771e26678b688b2379060975bb19628ab7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f53e49248c0e16e097c0853b735f900f162b06b6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f5f008e64935fc843e0afe545ac7b9eba9dcb788" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6286098dcbc8f7e66b9e00e7ab8fbd9be19ad43" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb34509265c8b63c431c89350dcec4fd114eaf16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb7e34fb4f8fef5d90ec5d0678a5cba56fe7d3cb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/ElectronicsApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/ShoppingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/CartRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/CartService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/CartServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/InMemoryCartRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/ShoppingConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/ShoppingFacade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/dto/CartDto$CartDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/dto/CartDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/dto/CartItemDto$CartItemDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/dto/CartItemDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/dto/UpdateCartDto$UpdateCartDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/dto/UpdateCartDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/exception/CartException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/exception/CartExceptionDto$CartExceptionDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/exception/CartExceptionDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/cart/domain/exception/CartExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/infrastructure/request/SecurityRequestFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/infrastructure/security/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/infrastructure/session/SessionConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/infrastructure/session/WebSocketConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/login/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/mail/MailController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/mail/domain/MailConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/mail/domain/MailConstructor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/mail/domain/MailFacade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/City$CityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/CityRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/Customer$CustomerBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/CustomerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/DeliveryAddress$DeliveryAddressBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/DeliveryAddress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/InMemoryCityRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/InMemoryCustomerRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/InMemoryOrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/Order$OrderBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/OrderConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/OrderConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/OrderFacade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/OrderItem$OrderItemBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/OrderItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/OrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/domain/Province.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/dto/CustomerDto$CustomerDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/dto/CustomerDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/dto/OrderDto$OrderDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/dto/OrderDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/dto/OrderItemDto$OrderItemDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/dto/OrderItemDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/dto/ShowOrderDto$ShowOrderDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/dto/ShowOrderDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/exceptions/OrderException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/exceptions/OrderExceptionDto$OrderExceptionDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/exceptions/OrderExceptionDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/order/exceptions/OrderExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/CategoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/PromotionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/CategoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/ImageUploader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/InMemoryCategoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/InMemoryProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/InMemoryPromotionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/Product$ProductBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/ProductConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/ProductConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/ProductFacade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/Promotion$PromotionBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/Promotion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/PromotionRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/PromotionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/PromotionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/category/PostCategoryDto$PostCategoryDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/category/PostCategoryDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/category/ShowCategoryDto$ShowCategoryDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/category/ShowCategoryDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/category/UpdateCategoryDto$UpdateCategoryDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/category/UpdateCategoryDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/product/PostProductDto$PostProductDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/product/PostProductDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/product/ProductBasicDto$ProductBasicDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/product/ProductBasicDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/product/ProductDto$ProductDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/product/ProductDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/promotion/PostPromotionDto$PostPromotionDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/promotion/PostPromotionDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/promotion/PromotionDto$PromotionDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/dto/promotion/PromotionDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/exception/product/ProductExceptionDto$ProductExceptionDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/exception/product/ProductExceptionDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/product/domain/exception/product/ProductExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/util/auditor/AuditorConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/util/auditor/CustomAuditorAware.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/electronics/util/mapper/SuperConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/image/product/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/ElectronicsApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/cart/domain/ShoppingSpecTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/order/domain/OrderSpecTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/order/domain/SampleOrder$Trait$FieldHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/order/domain/SampleOrder$Trait$Helper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/order/domain/SampleOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/CategorySpecTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/ProductSpecTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/PromotionSpecTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/SampleCategories$Trait$FieldHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/SampleCategories$Trait$Helper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/SampleCategories.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/SampleProducts$Trait$FieldHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/SampleProducts$Trait$Helper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/SampleProducts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/SamplePromotions$Trait$FieldHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/SamplePromotions$Trait$Helper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/server/electronics/product/domain/SamplePromotions.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -556,9 +221,32 @@
     <session id="170682169">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="xml" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="XML" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -619,11 +307,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/electronics/order/domain/OrderConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
+            <state relative-caret-position="813">
               <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/electronics/ElectronicsApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -710,7 +416,6 @@
         <option value="$PROJECT_DIR$/src/main/java/server/electronics/mail/MailController.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/electronics/infrastructure/security/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/server/electronics/mail/domain/MailConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/electronics/mail/domain/MailFacade.java" />
@@ -723,6 +428,7 @@
         <option value="$PROJECT_DIR$/src/main/java/server/electronics/order/domain/CityRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/electronics/order/domain/OrderConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/electronics/order/domain/OrderConverter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -731,6 +437,17 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="electronics" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="3278" />
@@ -747,20 +464,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="electronics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -951,40 +673,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ElectronicsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="electronics" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="server.electronics.ElectronicsApplication" />
@@ -1085,6 +773,8 @@
       <workItem from="1536571094092" duration="2801000" />
       <workItem from="1537294301906" duration="1867000" />
       <workItem from="1537350235460" duration="31000" />
+      <workItem from="1537350788595" duration="68000" />
+      <workItem from="1537350893216" duration="155000" />
     </task>
     <task id="LOCAL-00001" summary="created promotion">
       <created>1534332313765</created>
@@ -1129,7 +819,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272942000" />
+    <option name="totallyTimeSpent" value="273165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1143,7 +833,7 @@
   <component name="ToolWindowManager">
     <frame x="3278" y="-174" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1174,7 +864,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Properties" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -1351,13 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/electronics/ElectronicsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/electronics/product/domain/ProductFacade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -1404,13 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" column="105" selection-start-line="13" selection-start-column="105" selection-end-line="13" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1585,8 +1261,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/electronics/order/domain/OrderConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
+        <state relative-caret-position="813">
           <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/electronics/ElectronicsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
