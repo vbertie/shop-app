@@ -3,21 +3,20 @@ package server.electronics.order.domain;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import server.electronics.util.auditor.CustomAuditorAware;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Getter
-@Setter
+@Data
 @Builder
-@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
 @EnableJpaAuditing
-@EntityListeners(AuditingEntityListener.class)
+@EqualsAndHashCode(of = "id")
+@EntityListeners(CustomAuditorAware.class)
 class Customer {
 
     @Id

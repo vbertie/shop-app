@@ -17,12 +17,9 @@ import javax.persistence.NoResultException;
 import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
 import java.io.IOException;
-import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import static java.util.Objects.requireNonNull;
 
 @Slf4j
 @Transactional
@@ -38,8 +35,6 @@ public class ProductFacade {
 
     public ProductDto addProduct(PostProductDto postProductDto) {
         Product product = productConverter.convert(postProductDto);
-        product.setCategory(categoryRepository.findByName(postProductDto.getType())
-                .orElseThrow(() -> new NoResultException("Category not found.")));
 
         return productConverter.convertToDto(productRepository.save(product));
     }
@@ -106,11 +101,11 @@ public class ProductFacade {
                .orElseThrow(() -> new NoResultException("Category with id" + id + " not found."));
     }
 
-    public Set<ShowCategoryDto> getCategories(){
+    public List<ShowCategoryDto> findCategories(){
         return categoryRepository.findAll()
                 .stream()
                 .map(Category::dto)
-                .collect(Collectors.toSet());
+                .collect(Collectors.toList());
     }
 
     public void updateCategory(UpdateCategoryDto updateCategoryDto) {

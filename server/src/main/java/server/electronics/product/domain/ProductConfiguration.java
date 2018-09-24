@@ -16,9 +16,14 @@ class ProductConfiguration {
     @Bean
     ProductFacade productFacade(ProductRepository productRepository, PromotionRepository promotionRepository,
                                 CategoryRepository categoryRepository){
-        SuperConverter<PostProductDto, ProductDto, Product> productConverter = new ProductConverter();
+        SuperConverter<PostProductDto, ProductDto, Product> productConverter = new ProductConverter(categoryRepository);
         PromotionService promotionService = new PromotionServiceImpl();
         ImageUploader imageUploader = new ImageUploader();
         return new ProductFacade(productRepository, promotionRepository, productConverter,promotionService, imageUploader, categoryRepository);
+    }
+
+    @Bean
+    public ProductAndCategoryInitializer productAndCategoryInitializer(CategoryRepository categoryRepository, ProductRepository productRepository){
+        return new ProductAndCategoryInitializer(productRepository, categoryRepository);
     }
 }

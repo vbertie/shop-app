@@ -13,10 +13,6 @@ public interface SuperConverter<T, U, R> {
 
     R update(@NotNull T updater, @NotNull R result);
 
-    default boolean supportsClass(Class<?> classType) {
-        return getClass().isAssignableFrom(classType);
-    }
-
     static <E> void setIfNonNull(E value, Consumer<E> setterMethod){
         if(value != null)
             setterMethod.accept(value);

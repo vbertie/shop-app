@@ -7,14 +7,14 @@ import javax.persistence.Embeddable;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-@Getter
-@Setter
+
+
 @Builder
-@Immutable
+@Value
 @Embeddable
-@NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
+@NoArgsConstructor(force = true)
 class OrderItem {
 
     @NotNull

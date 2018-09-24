@@ -10,6 +10,7 @@ import java.io.Serializable;
 @Builder
 @AllArgsConstructor
 class OrderExceptionDto implements Serializable {
+
     private String field;
     private String code;
     private Object rejectedValue;

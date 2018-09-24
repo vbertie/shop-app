@@ -9,7 +9,7 @@ import server.electronics.product.domain.dto.category.PostCategoryDto;
 import server.electronics.product.domain.dto.category.ShowCategoryDto;
 import server.electronics.product.domain.dto.category.UpdateCategoryDto;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/category")
@@ -38,8 +38,8 @@ class CategoryController {
 
     @GetMapping
     @ResponseStatus(value = HttpStatus.OK)
-    public Set<ShowCategoryDto> getCategories(){
-        return productFacade.getCategories();
+    public List<ShowCategoryDto> getCategories(){
+        return productFacade.findCategories();
     }
 
     @GetMapping("/{id}")

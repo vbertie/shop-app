@@ -70,6 +70,9 @@ const appRoutes: Routes = [
     path: 'user/product/details', component:ProductDetailsComponent
   },
   {
+    path: 'user/product/details/:id', component:ProductDetailsComponent
+  },
+  {
     path: 'user/shoppingCart', component:ShoppingCartComponent
   },
   {

@@ -26,6 +26,7 @@ class CartServiceImpl implements CartService{
 
         return cartDto
                 .withGrandTotal(calculateGrandTotal(cartItems));
+
     }
 
     @Override
@@ -72,7 +73,6 @@ class CartServiceImpl implements CartService{
                     .stream()
                     .map(CartItemDto::getTotalPrice)
                     .reduce(BigDecimal.ZERO, BigDecimal::add);
-
     }
 }
 

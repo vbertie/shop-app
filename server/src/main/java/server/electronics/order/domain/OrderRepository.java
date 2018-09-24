@@ -7,6 +7,7 @@ import java.util.Optional;
 
 @org.springframework.stereotype.Repository
 interface OrderRepository extends Repository<Order, Long> {
+
     Order save(Order order);
 
     List<Order> findAll();

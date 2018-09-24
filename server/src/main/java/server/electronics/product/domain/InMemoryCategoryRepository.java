@@ -1,8 +1,8 @@
 package server.electronics.product.domain;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
@@ -28,10 +28,10 @@ class InMemoryCategoryRepository implements CategoryRepository {
     }
 
     @Override
-    public Set<Category> findAll() {
+    public List<Category> findAll() {
         return categories.values()
                 .stream()
-                .collect(Collectors.toSet());
+                .collect(Collectors.toList());
     }
 
     @Override
@@ -40,5 +40,15 @@ class InMemoryCategoryRepository implements CategoryRepository {
                 .stream()
                 .filter(category -> category.getName().equalsIgnoreCase(name))
                 .findAny();
+    }
+
+    @Override
+    public long count() {
+        return 0;
+    }
+
+    @Override
+    public void saveAll(Iterable<Category> iterable) {
+
     }
 }

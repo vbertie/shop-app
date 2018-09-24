@@ -15,8 +15,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestControllerAdvice
-@Order(Ordered.HIGHEST_PRECEDENCE)
 @NoArgsConstructor
+@Order(Ordered.HIGHEST_PRECEDENCE)
 class OrderExceptionHandler {
 
     @ResponseStatus(HttpStatus.NOT_FOUND)

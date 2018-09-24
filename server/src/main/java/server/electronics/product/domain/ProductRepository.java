@@ -8,6 +8,7 @@ import java.util.Optional;
 import java.util.Set;
 
 interface ProductRepository extends Repository<Product, Long>{
+
     Product save(Product product);
 
     List<Product> findAll();
@@ -27,4 +28,8 @@ interface ProductRepository extends Repository<Product, Long>{
     List<Product> findAllByPromotionNotNull();
 
     List<Product> findAllByPromotionNotNullAndCategoryName(String category);
+
+    void saveAll(Iterable<Product> iterable);
+
+    long count();
 }

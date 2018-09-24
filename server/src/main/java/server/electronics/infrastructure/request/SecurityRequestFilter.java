@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class SecurityRequestFilter implements Filter {
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) {
+
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
 
@@ -37,8 +38,6 @@ public class SecurityRequestFilter implements Filter {
             response.setStatus(HttpServletResponse.SC_OK);
         }
     }
-
-
 
     public void init(FilterConfig filterConfig) {}
 

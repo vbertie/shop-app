@@ -21,7 +21,7 @@ public class UpdateCategoryDto implements Serializable {
     private final String name;
 
     public UpdateCategoryDto(){
-        this.id = null;
+        this.id = 1232323231l;
         this.name = "";
     }
 }

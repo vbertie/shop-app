@@ -3,21 +3,19 @@ package server.electronics.order.domain;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import server.electronics.util.auditor.CustomAuditorAware;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Embeddable
-@Getter
-@Setter
+@Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
-@EqualsAndHashCode
 @EnableJpaAuditing
-@EntityListeners(AuditingEntityListener.class)
+@AllArgsConstructor
+@NoArgsConstructor
+@EntityListeners(CustomAuditorAware.class)
 class City {
 
     @Column(length = 40, nullable = false)

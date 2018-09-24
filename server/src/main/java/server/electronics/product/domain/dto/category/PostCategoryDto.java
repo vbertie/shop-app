@@ -15,8 +15,8 @@ public class PostCategoryDto implements Serializable {
     @Null
     private final Long id;
 
-
-    @Size(min = 1, max = 20)    @NotNull
+    @Size(min = 1, max = 20)
+    @NotNull
     private final String name;
 
     public PostCategoryDto(){

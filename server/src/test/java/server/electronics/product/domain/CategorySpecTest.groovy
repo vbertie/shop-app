@@ -1,6 +1,7 @@
 package server.electronics.product.domain
 
 import server.electronics.product.domain.dto.category.PostCategoryDto
+import server.electronics.product.domain.dto.category.ShowCategoryDto
 import server.electronics.product.domain.dto.category.UpdateCategoryDto
 import spock.lang.Specification
 
@@ -82,7 +83,7 @@ class CategorySpecTest extends Specification{
             productFacade.addCategory(categoryDto2)
 
         when: "We want to get all categories"
-            Set<Category> categories = productFacade.getCategories()
+            List<ShowCategoryDto> categories = productFacade.findCategories()
 
         then: "Set size is == 2"
             categories.size() == 2

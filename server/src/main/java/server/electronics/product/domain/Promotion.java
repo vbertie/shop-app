@@ -3,9 +3,8 @@ package server.electronics.product.domain;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import server.electronics.product.domain.dto.promotion.PromotionDto;
+import server.electronics.util.auditor.CustomAuditorAware;
 
 import javax.persistence.*;
 import javax.validation.constraints.Digits;
@@ -15,13 +14,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Getter
-@Setter
-@Builder
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EnableJpaAuditing
-@EntityListeners(AuditingEntityListener.class)
+@EqualsAndHashCode(of = "id")
+@EntityListeners(CustomAuditorAware.class)
 class Promotion {
 
     @Id

@@ -2,7 +2,6 @@ package server.electronics.product.domain;
 
 
 import org.springframework.data.repository.Repository;
-import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 

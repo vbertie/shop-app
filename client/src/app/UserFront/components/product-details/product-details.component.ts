@@ -16,6 +16,7 @@ export class ProductDetailsComponent implements OnInit {
   private product:Product = new Product();
   private numberList: number[] = [1,2,3,4,5,6,7,8,9];
 	private qty: number;
+  private productId:number;
   private addProductSuccess: boolean = false;
   private notEnoughInStock:boolean = false;
   private cartItem:CartItem = new CartItem;
@@ -35,12 +36,26 @@ export class ProductDetailsComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
           this.product = JSON.parse(params['product']);
       });
-      console.log(this.product.name)
-    this.serverPath = AppConst.serverPath;
 
-    if ((this.product.price != this.product.oldPrice) && this.product.oldPrice !=null){
-      this.isAtPromotion = true;
-    }
+      if (this.product.id == null){
+        this.route.params.forEach((params: Params) => {
+        this.productId = Number.parseInt(params['id']);
+      });
+
+          this.productService.showProduct(this.productId).subscribe(
+            res=>{
+              this.product = res.json();
+              if (res.json().promotionId != null){
+                this.isAtPromotion = true;
+              }
+            },
+            err=>{
+              console.log(err);
+            }
+          )
+      }
+
+    this.serverPath = AppConst.serverPath;
   }
 
   addToCart(){

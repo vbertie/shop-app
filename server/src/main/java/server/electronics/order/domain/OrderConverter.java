@@ -43,15 +43,16 @@ class OrderConverter implements SuperConverter<OrderDto,ShowOrderDto, Order> {
         setIfNonNull(updater.getIsDelivered(), result::setDelivered);
 
         CartDto cartDto = updater.getCart();
-        CustomerDto customerDataDto = updater.getCustomer();
 
+        if(cartDto != null) {
+            setIfNonNull(convertOrderItems(cartDto), result::setOrderItems);
+            setIfNonNull(cartDto.getGrandTotal(), result::setOrderTotal);
+        }
+
+        CustomerDto customerDataDto = updater.getCustomer();
         setIfNonNull(convertCustomerData(customerDataDto), result::setCustomer);
         setIfNonNull(convertDeliveryAddress(customerDataDto), result::setDeliveryAddress);
 
-        if(cartDto.getCartId() != null) {
-            setIfNonNull(convertOrderItems(cartDto), result::setOrderItems);
-            setIfNonNull(cartDto.getGrandTotal(), result::setOrderPayment);
-        }
 
         customerRepository.save(result.getCustomer());
 
@@ -72,7 +73,7 @@ class OrderConverter implements SuperConverter<OrderDto,ShowOrderDto, Order> {
         return ShowOrderDto.builder()
                 .id(order.getId())
                 .isPaid(order.isPaid())
-                .grandTotal(order.getOrderPayment())
+                .grandTotal(order.getOrderTotal())
                 .isDelivered(order.isDelivered())
                 .customer(createCustomerDataDto(order))
                 .items(createItemsDto(order, productDtos))

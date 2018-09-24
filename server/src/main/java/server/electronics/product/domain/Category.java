@@ -1,29 +1,23 @@
 package server.electronics.product.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import server.electronics.product.domain.dto.category.ShowCategoryDto;
 import server.electronics.product.domain.dto.product.ProductDto;
+import server.electronics.util.auditor.CustomAuditorAware;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Collections;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 @Entity
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EnableJpaAuditing
-@EntityListeners(AuditingEntityListener.class)
+@EqualsAndHashCode(of = "id")
+@EntityListeners(CustomAuditorAware.class)
 class Category {
 
     @Id
@@ -37,14 +31,19 @@ class Category {
     private Set<Product> products;
 
     @CreatedDate
-    @Column(insertable = true, updatable = false)
+    @Column(insertable = false, updatable = false)
     private LocalDateTime creationDate;
 
     @LastModifiedDate
-    @Column(insertable = true, updatable = true)
+    @Column(insertable = false, updatable = false)
     private LocalDateTime lastModifiedDate;
 
     public Category(String name){
+        this.name = name;
+    }
+
+    public Category(Long id, String name) {
+        this.id = id;
         this.name = name;
     }
 

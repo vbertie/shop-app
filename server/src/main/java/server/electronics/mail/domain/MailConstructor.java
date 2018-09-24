@@ -1,12 +1,6 @@
 package server.electronics.mail.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.mail.SimpleMailMessage;
-import org.springframework.stereotype.Component;
-import org.thymeleaf.TemplateEngine;
 import server.electronics.order.dto.CustomerDto;
 
 class MailConstructor {

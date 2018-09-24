@@ -1,6 +1,6 @@
 package server.electronics.product.domain;
 
-import lombok.NonNull;
+import lombok.AllArgsConstructor;
 import server.electronics.product.domain.dto.product.PostProductDto;
 import server.electronics.product.domain.dto.product.ProductDto;
 import server.electronics.util.mapper.SuperConverter;
@@ -10,11 +10,13 @@ import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Optional;
 
 import static server.electronics.util.mapper.SuperConverter.setIfNonNull;
 
+@AllArgsConstructor
 class ProductConverter implements SuperConverter<PostProductDto,ProductDto, Product> {
+
+    private CategoryRepository categoryRepository;
 
     @Override
     public Product convert(@NotNull PostProductDto dto) {
@@ -34,8 +36,10 @@ class ProductConverter implements SuperConverter<PostProductDto,ProductDto, Prod
         setIfNonNull(new BigDecimal(updater.getPrice()), result::setPrice);
         setIfNonNull(updater.getDescription(), result::setDescription);
         setIfNonNull(Integer.valueOf(updater.getInStockNumber()), result::setInStockNumber);
-        setIfNonNull(updater.getDescription(), result::setDescription);
         setIfNonNull(updater.getActive(), result::setActive);
+        setIfNonNull(categoryRepository
+                .findByName(updater.getType())
+                .orElseThrow(() -> new NoResultException("Category not found.")), result::setCategory);
 
         return result;
     }

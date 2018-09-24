@@ -78,6 +78,16 @@ class InMemoryProductRepository implements ProductRepository{
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public void saveAll(Iterable<Product> iterable) {
+        
+    }
+
+    @Override
+    public long count() {
+        return 0;
+    }
+
     private boolean isAtPromotion(Product product){
         return product.getPromotion() != null ? true : false;
     }

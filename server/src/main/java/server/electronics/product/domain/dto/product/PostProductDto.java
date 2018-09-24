@@ -5,7 +5,6 @@ import javax.validation.constraints.*;
 
 @Builder
 @Getter
-@EqualsAndHashCode
 @AllArgsConstructor
 public class PostProductDto{
 

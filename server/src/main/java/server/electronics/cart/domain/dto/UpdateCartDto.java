@@ -5,10 +5,11 @@ import lombok.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-@Getter
+@Value
 @Builder
 @EqualsAndHashCode
 @AllArgsConstructor
+@NoArgsConstructor(force = true)
 public class UpdateCartDto {
 
     @NotNull
@@ -16,9 +17,4 @@ public class UpdateCartDto {
 
     @Min(1)
     private final int amount;
-
-    public UpdateCartDto(){
-        this.productId = null;
-        this.amount = 0;
-    }
 }

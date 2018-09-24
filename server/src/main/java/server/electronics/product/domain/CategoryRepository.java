@@ -2,8 +2,8 @@ package server.electronics.product.domain;
 
 import org.springframework.data.repository.Repository;
 
+import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 @org.springframework.stereotype.Repository
 interface CategoryRepository extends Repository<Category, Long> {
@@ -14,7 +14,11 @@ interface CategoryRepository extends Repository<Category, Long> {
 
     void deleteById(Long id);
 
-    Set<Category> findAll();
+    List<Category> findAll();
 
     Optional<Category> findByName(String name);
+
+    long count();
+
+    void saveAll(Iterable<Category> iterable);
 }

@@ -3,9 +3,8 @@ package server.electronics.product.domain;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import server.electronics.product.domain.dto.product.ProductDto;
+import server.electronics.util.auditor.CustomAuditorAware;
 
 import javax.persistence.*;
 import javax.validation.constraints.Digits;
@@ -14,13 +13,11 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
-@Builder
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EnableJpaAuditing
-@EntityListeners(AuditingEntityListener.class)
+@EqualsAndHashCode(of = "id")
+@EntityListeners(CustomAuditorAware.class)
 class Product {
 
     @Id
@@ -59,6 +56,17 @@ class Product {
     @LastModifiedDate
     @Column(insertable = true, updatable = true)
     private LocalDateTime lastModifiedDate;
+
+    public Product(Long id, String name, @Digits(fraction = 2, integer = 7) BigDecimal price,
+                   @Min(0) int inStockNumber, String description, Boolean active, Category category) {
+        this.id = id;
+        this.category = category;
+        this.name = name;
+        this.price = price;
+        this.inStockNumber = inStockNumber;
+        this.description = description;
+        this.active = active;
+    }
 
     public ProductDto dto(){
         return ProductDto.builder()

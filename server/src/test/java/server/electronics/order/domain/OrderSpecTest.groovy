@@ -34,21 +34,34 @@ class OrderSpecTest extends Specification implements SampleOrder, SampleProducts
             shoppingFacade.addCartItem(cart.cartId, updateCartDto1)
             shoppingFacade.addCartItem(cart.cartId, updateCartDto2)
 
+            int addedProductInStock1 =
+                    productFacade.showProduct(updateCartDto1.productId).inStockNumber
+
+            int addedProductInStock2 =
+                    productFacade.showProduct(updateCartDto2.productId).inStockNumber
+
+            CartDto cartWithItems = shoppingFacade.showCart(CART_ID).get()
+
             OrderDto orderDto = OrderDto.builder()
                             .id(1l)
                             .customer(customerData1)
                             .isPaid(false)
                             .isDelivered(false)
-                            .cart(cart)
+                            .cart(cartWithItems)
                             .build()
 
         when: "We want to addProduct order to database"
              orderFacade.processOrder(orderDto)
 
-        then: "Order exist in database"
+        then: "Order exist in database & products in stock number is reduced "
             ShowOrderDto showOrderDto = orderFacade.showOrder(1l)
-            showOrderDto.getId() == orderDto.id
-            showOrderDto != null
+            showOrderDto.grandTotal == 5080
+
+            productFacade.showProduct(updateCartDto1.productId)
+                    .inStockNumber == addedProductInStock1 - updateCartDto1.amount
+
+            productFacade.showProduct(updateCartDto2.productId)
+                    .inStockNumber == addedProductInStock2 - updateCartDto2.amount
     }
 
     def "Should get list of orders" () {
@@ -142,5 +155,4 @@ class OrderSpecTest extends Specification implements SampleOrder, SampleProducts
             actualizedOrder.isPaid == true
             actualizedOrder.isDelivered == true
     }
-
 }

@@ -3,8 +3,8 @@ package server.electronics.order.domain;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import server.electronics.util.auditor.CustomAuditorAware;
 
 import javax.persistence.*;
 import javax.validation.constraints.Digits;
@@ -13,16 +13,15 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Set;
 
-@Getter
-@Setter
+@Data
 @Builder
 @Entity
 @Table(name = "orders")
+@EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
 @EnableJpaAuditing
-@EntityListeners(AuditingEntityListener.class)
+@EntityListeners(CustomAuditorAware.class)
 class Order {
 
     @Id
@@ -42,7 +41,7 @@ class Order {
 
     @Min(0)
     @Digits(integer = 7, fraction = 2)
-    private BigDecimal orderPayment;
+    private BigDecimal orderTotal;
 
     private boolean isPaid;
     private boolean isDelivered;

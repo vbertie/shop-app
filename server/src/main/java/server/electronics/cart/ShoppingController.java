@@ -11,7 +11,6 @@ import server.electronics.cart.domain.dto.UpdateCartDto;
 import server.electronics.cart.domain.exception.CartException;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
 
 @Slf4j
 @RestController
@@ -23,13 +22,13 @@ class ShoppingController {
 
     @PostMapping
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
-    public CartDto createShoppingCart(@RequestBody String cartId, HttpServletRequest request){
+    public CartDto createShoppingCart(@RequestBody String cartId){
         return shoppingFacade.createCart(cartId);
     }
 
     @GetMapping("/{cartId}")
     @ResponseStatus(value = HttpStatus.OK)
-    public CartDto readShoppingCart(@PathVariable String cartId, HttpServletRequest request){
+    public CartDto readShoppingCart(@PathVariable String cartId){
         return shoppingFacade.showCart(cartId).orElseThrow(() -> new CartException("Cart not found"));
     }
 

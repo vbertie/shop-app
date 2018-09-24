@@ -15,7 +15,6 @@ class ShoppingSpecTest extends Specification implements SampleProducts, SampleCa
     private ProductFacade productFacade = new ProductConfiguration().productFacade();
     private ShoppingFacade shoppingFacade = new ShoppingConfiguration().shoppingFacade(productFacade);
 
-
     def setup(){
         productFacade.addCategory(smartphone)
         productFacade.addCategory(camera)
@@ -46,7 +45,7 @@ class ShoppingSpecTest extends Specification implements SampleProducts, SampleCa
             UpdateCartDto addCartDto1 = new UpdateCartDto(1l, 3)
             UpdateCartDto addCartDto2 = new UpdateCartDto(2l, 4)
 
-        when:"We addProduct productxD into the card "
+        when:"We addProduct product into the card "
             shoppingFacade.addCartItem(cartDto.getCartId(), addCartDto1)
             shoppingFacade.addCartItem(cartDto.getCartId(), addCartDto2)
 
@@ -57,7 +56,8 @@ class ShoppingSpecTest extends Specification implements SampleProducts, SampleCa
             cartItem1.quantity == 3
             cartItem2.quantity == 4
             cartDto.cartItems.size() == 2
-    }
+            shoppingFacade.showCart(CART_ID).get().grandTotal == cartItem1.totalPrice + cartItem2.totalPrice
+}
 
     def "Should remove cart item from shopping cart" () {
 
