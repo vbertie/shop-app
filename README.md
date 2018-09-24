@@ -21,6 +21,8 @@ It's completely functional online store with admin management panel.
 
 - Spock
 
+- Redis
+
 - Angular, Bootstrap, CSS
 
 
