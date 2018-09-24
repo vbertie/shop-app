@@ -32,7 +32,7 @@ Live presentation is avaible at: http://barteksulima.pl
 
 There are couple of screenshots:
 
-![Alt text](http://i64.tinypic.com/2nbess9.png)
+![Alt text](http://i66.tinypic.com/28in993.png)
 
 ![Alt text](http://i68.tinypic.com/2m6lwk6.png)
 
