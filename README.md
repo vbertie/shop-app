@@ -11,7 +11,7 @@ Java RESTful application based on hexagonal architecture (ports & adapters), whi
 
 It's completely functional online store with admin management panel.
 
-## Technology stack used
+## Technologies used:
 
 - Spring (Boot2, MVC, Data, Security, Session)
 
