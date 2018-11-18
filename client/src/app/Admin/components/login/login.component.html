@@ -22,7 +22,7 @@
             <a (click)="forgotPassword()" style="cursor:pointer">Forgot credentials?</a>
             <div *ngIf="forgotCredentials">
               <span class="text-danger align-middle">
-           <i class="fa fa-close">Login: Admin, Password: Admin</i>
+           <i class="fa fa-close">Login: admin, Password: admin</i>
            </span>
             </div>
           </div>
@@ -32,8 +32,7 @@
       </div>
     </div>
   </div>
-  <div [hidden]="!loggedIn" class="list-group">
-    <br /><br /><br />
+  <div [hidden]="!loggedIn" class="list-group" style="margin-top:10%;">
     <div class="row">
       <div class="col-md-3">
         <div class="col-md-12">
@@ -42,8 +41,8 @@
               Product
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button"><a routerLink="/admin/addProduct">Add Product</a></button>
-              <button class="dropdown-item" type="button"><a routerLink="/admin/listProducts">View Products</a></button>
+              <a class="dropdown-item" routerLink="/admin/addProduct">Add Product</a>
+              <a class="dropdown-item" routerLink="/admin/listProducts">View Products</a>
             </div>
           </div>
         </div>
@@ -55,8 +54,8 @@
               Category
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button"><a routerLink="/admin/addCategory" >Add Category</a></button>
-              <button class="dropdown-item" type="button"><a routerLink="/admin/listCategories">View Categories</a></button>
+              <a class="dropdown-item" routerLink="/admin/addCategory" >Add Category</a>
+              <a class="dropdown-item" routerLink="/admin/listCategories">View Categories</a>
             </div>
           </div>
         </div>
@@ -68,9 +67,9 @@
               Promotion
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button"><a routerLink="/admin/addPromotion" >Add Promotion</a></button>
-              <button class="dropdown-item" type="button"><a routerLink="/admin/listPromotions" >View Promotions</a></button>
-              <button class="dropdown-item" type="button"><a routerLink="/admin/managePromotions">Promotion Manager</a></button>
+              <a class="dropdown-item" routerLink="/admin/addPromotion" >Add Promotion</a>
+              <a class="dropdown-item" routerLink="/admin/listPromotions" >View Promotions</a>
+              <a class="dropdown-item" routerLink="/admin/managePromotions">Promotion Manager</a>
             </div>
           </div>
         </div>
@@ -82,7 +81,7 @@
               Order
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button"><a routerLink="/admin/listOrders" >View Orders</a></button>
+              <a class="dropdown-item" routerLink="/admin/listOrders" >View Orders</a>
             </div>
           </div>
         </div>
