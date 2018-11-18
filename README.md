@@ -28,7 +28,7 @@ It's completely functional online store with admin management panel.
 
 ## How does it look like?
 
-Live presentation is avaible at: http://barteksulima.pl
+Live presentation is avaible at: http://bs.barteksulima.pl
 
 There are couple of screenshots:
 
