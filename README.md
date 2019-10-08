@@ -24,18 +24,3 @@ It's completely functional online store with admin management panel.
 - Redis
 
 - Angular, Bootstrap, CSS
-
-
-## How does it look like?
-
-Live presentation is avaible at: http://bs.barteksulima.pl
-
-There are couple of screenshots:
-
-![Alt text](http://i66.tinypic.com/28in993.png)
-
-![Alt text](http://i68.tinypic.com/2m6lwk6.png)
-
-![Alt text](http://i65.tinypic.com/28l46qa.png)
-
-![Alt text](http://i68.tinypic.com/2i24qh1.png)
